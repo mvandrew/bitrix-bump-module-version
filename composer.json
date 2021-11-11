@@ -17,6 +17,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "composer/installers": "^v2.0.0"
     }
 }
