@@ -71,7 +71,17 @@ class ModuleVersion
      */
     public function setFileName(string $fileName): void
     {
-        $this->fileName = $fileName;
+        $this->fileName     = $fileName;
+        $responsed          = false;
+
+        if ( file_exists($this->fileName) && ($handle = fopen($this->fileName, 'r')) !== false ) {
+            if ( ($sourceText = fread($handle, filesize($this->fileName))) !== false ) {
+
+                $responsed = true;
+
+            }
+            fclose($handle);
+        }
     }
 
     /**
