@@ -1,0 +1,21 @@
+{
+    "name": "msav/bitrix-bump-module-version",
+    "description": "Скрипт обновления версии модуля 1С-Битрикс.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Msav\\BitrixBumpModuleVersion\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrey Mishchenko",
+            "email": "msav@msav.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2"
+    }
+}
